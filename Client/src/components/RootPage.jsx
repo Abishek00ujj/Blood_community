@@ -31,9 +31,14 @@ export const RootPage=()=>
         </div>
         <div className='w-screen h-auto flex justify-center'>
         </div>
-        <div className='w-screen h-auto flex justify-center mb-32'>
+        <div className='w-screen h-auto flex justify-center m-5'>
         <Link to="/news">
             <button className='bg-black p-5 text-white rounded-3xl'>Health News</button>
+       </Link>
+        </div>
+        <div className='w-screen h-auto flex justify-center'>
+        <Link to="/contact">
+            <button className='bg-black p-5 text-white rounded-3xl'>Contact us</button>
        </Link>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import RootPage from './components/RootPage';
 import About from './components/About';
 import News from './components/News';
+import Contact from './components/Contact';
 function App()
  {
   return (
@@ -15,6 +16,7 @@ function App()
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
