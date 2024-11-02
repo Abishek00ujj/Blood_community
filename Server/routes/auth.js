@@ -35,7 +35,11 @@ router.post("/login",async(req,res)=>{
     {
         return res.status(400).json({message:"Invalid password"});
     }
-    return res.status(200).json({message:"Logged in successfull"});
+    const { password: _, ...userWithoutPassword } = existingUser.toObject();
+        return res.status(200).json({
+            message: "Logged in successfully",
+            user: userWithoutPassword
+        });
 }
      catch(err)
     {

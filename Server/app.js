@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const auth = require("./routes/auth");
+const userdata=require("./routes/userdata"); 
 require("./connection/connection");
 
 const app = express();
@@ -10,9 +11,10 @@ app.use(express.json());
 app.get("/", (req, res) => {
     res.send("Hello");
 });
-
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use("/api/v1", auth);
-
+app.use("/api/v2",userdata);
 app.listen(1998, () => {
     console.log('Server is running on http://localhost:1998');
 });
