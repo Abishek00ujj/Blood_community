@@ -11,6 +11,7 @@ const News = () => {
       const news = await axios.get(
         "https://newsapi.org/v2/everything?q=health&from=2024-10-25&sortBy=popularity&apiKey=ce145d000c3644819251eb53b10b5d0a"
       );
+      console.log(news.status);
       if(news.status=="ok"||news.status==200)
       {
         alert("Fetched!"+news.status);
