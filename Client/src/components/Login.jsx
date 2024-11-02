@@ -33,7 +33,8 @@ export const Login = () =>{
      await axios.post("http://localhost:1998/api/v1/login",objdata).then((response)=>{
        const toastfy=(message)=>toast.success(message)
        setTimeout(()=>setRedirecttohome(true),2000);
-         //sessionStorage.setItem("id",res.data.others._id);
+        //  sessionStorage.setItem("id",res.data.others._id);
+        //  console.log(sessionStorage.getItem());
          toastfy(response.data.message);
      })
    }
