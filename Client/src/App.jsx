@@ -6,6 +6,7 @@ import RootPage from './components/RootPage';
 import About from './components/About';
 import News from './components/News';
 import Contact from './components/Contact';
+import AddDetails from './components/AddDetails';
 function App()
  {
   return (
@@ -18,6 +19,7 @@ function App()
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
+        <Route path="/adddetails" element={<AddDetails />} />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </BrowserRouter>

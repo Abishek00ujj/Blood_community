@@ -41,6 +41,16 @@ export const RootPage=()=>
             <button className='bg-black p-5 text-white rounded-3xl'>Contact us</button>
        </Link>
         </div>
+        <div className='w-screen h-auto flex justify-center'>
+        <Link to="/home">
+            <button className='bg-black p-5 text-white rounded-3xl'>Request Blood</button>
+       </Link>
+        </div>
+        <div className='w-screen h-auto flex justify-center'>
+        <Link to="/adddetails">
+            <button className='bg-black p-5 text-white rounded-3xl'>Details ADD</button>
+       </Link>
+        </div>
       </div>
     </>
   );
