@@ -11,6 +11,10 @@ const News = () => {
       const news = await axios.get(
         "https://newsapi.org/v2/everything?q=health&from=2024-10-25&sortBy=popularity&apiKey=ce145d000c3644819251eb53b10b5d0a"
       );
+      if(news.status=="ok"||news.status==200)
+      {
+        alert("Fetched!"+news.status);
+      }
       setDatu(news.data.articles);
     } catch (err) {
       console.error("Error fetching data:", err);
