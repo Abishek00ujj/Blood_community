@@ -1,6 +1,5 @@
 
 const router = require("express").Router();
-const userdata = require("../models/userdata");
 const UserData=require("../models/userdata");
 
 router.post("/adddetails",async(req,res)=>{

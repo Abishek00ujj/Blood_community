@@ -19,7 +19,7 @@ const AddDetails = () => {
         }
     }
     const DataAnupu=async(objData)=>{
-      const res=await axios.post("http://localhost:1998/api/v2/adddetails",objData);
+      const res = await axios.post("http://localhost:1998/api/v2/adddetails", objData);
       alert(res.status);
       if(res.status==201)
       {
