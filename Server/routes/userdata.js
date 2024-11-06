@@ -30,6 +30,18 @@ router.get("/getdetails",async(req,res)=>{
      res.status(500).json({ message: "Server error!" });
    }
 });
-
+router.get("/getdetails/:id",async(req,res)=>{
+    try
+    {
+        const { id }=req.params;
+        const getDetails=await UserData.findOne({_userid:id});
+        res.status(200).json({message:"user details fetched successfully",data:getDetails});
+    }
+    catch(err)
+    {
+      console.error(err);
+      res.status(500).json({ message: "Server error!" });
+    }
+ });
 
 module.exports = router;

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Navbar } from './Navbar';
 import HomeComponent from './HomeComponent';
 import axios from 'axios';
+import defaultimg from '../assets/img/defaultprofile.webp';
 
 export const Home = () => {
   const [data, setData] = useState([]);
+
   const fetchData = async () => {
     try {
       const response = await axios.get("http://localhost:1998/api/v2/getdetails");
@@ -14,6 +16,7 @@ export const Home = () => {
       console.error("Error fetching data:", error);
     }
   };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -25,7 +28,7 @@ export const Home = () => {
         {data.map((item, index) => (
           <HomeComponent
             key={index}
-            img={item.img}
+            img={item.img || defaultimg}
             name={item.name}
             blood={item.blood}
             city={item.city}

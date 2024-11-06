@@ -35,7 +35,6 @@ const userdataSchema = new mongoose.Schema({
     },
     img: {
         type: String,
-
     }
 });
 

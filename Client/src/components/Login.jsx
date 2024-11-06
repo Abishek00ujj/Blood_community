@@ -50,7 +50,7 @@ export const Login = () =>{
   }
   if(Redirecttohome)
     {
-      return <Navigate to={"/home"}/>
+      return <Navigate to={"/development"}/>
     }
   return (
     <>
