@@ -14,7 +14,7 @@ const Profile = () => {
     try {
       const id = sessionStorage.getItem('id');
       console.log("Fetched ID:", id);
-      const response = await axios.get(`https://blood-community-tcn0.onrender.com/api/v2/getdetails/api/v2/getdetails/${id}`);
+      const response = await axios.get(`https://blood-community-tcn0.onrender.com/api/v2/getdetails/${id}`);
       console.log("API Response:", response.data);
       setData(response.data.data);
     } catch (error) {
