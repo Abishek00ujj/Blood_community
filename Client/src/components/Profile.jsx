@@ -44,26 +44,23 @@ const Profile = () => {
         ) : (
           data && (
             <>
-              <div className="flex justify-center items-center w-full mb-4">
+              <div className="flex justify-center items-center w-full mt-4">
                 <img
                   src={data.img || defaultimg}
                   alt="Profile"
                   className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[180px] md:h-[180px] lg:w-[150px] lg:h-[150px] object-cover rounded-full"
                 />
               </div>
-              <div className="w-full md:w-[70%] lg:w-[50%] xl:w-[40%] flex flex-col bg-black text-white p-6 rounded-lg shadow-lg">
+              <div className="w-full md:w-[70%] lg:w-[50%] xl:w-[40%] flex flex-col bg-black text-white p-6 rounded-lg shadow-lg mt-5">
                 <p className="text-2xl font-semibold">{data.name}</p>
-                <p className="text-lg">Blood Type: {data.blood}</p>
+                <p className="text-lg">Blood Group: {data.blood}</p>
                 <p className="text-lg">City: {data.city}</p>
                 <p className="text-lg">State: {data.state}</p>
                 <p className="text-lg">Date of Birth: {data.dob}</p>
-                <p className="text-lg">Year: {data.year}</p>
+                <p className="text-lg">Acadamic Year: {data.year}</p>
                 <p className="text-lg">Contact Number: {data.number}</p>
               </div>
-              <div>
-                Emergency
-              </div>
-              <div className='flex'>
+              <div className='flex max-sm:flex-col w-screen justify-center items-center'>
                 <Link to="/home">
                   <button className='p-5 bg-red-500 text-white rounded-2xl m-5'>Find Blood🩸</button>
                 </Link>
