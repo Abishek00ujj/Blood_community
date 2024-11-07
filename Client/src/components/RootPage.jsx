@@ -8,6 +8,11 @@ export const RootPage=()=>
     <>
       <div>
         <Navbar name={"Life Saver"}/>
+        <div className='pt-5'>
+          <marquee behavior="" direction="left">
+             <p className=''>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis obcaecati dolore ipsa quisquam repellat maiores, ut sit fugiat ipsam, ratione libero expedita facilis commodi inventore aliquam, accusamus aliquid hic nulla.</p>
+          </marquee>
+        </div>
         <div className='w-screen h-screen flex flex-col justify-center items-center' id='mainPage'>
           <div className='text-center mb-8'>
             <p className='text-4xl'>Donate blood, be a lifesaver</p>
