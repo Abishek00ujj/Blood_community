@@ -8,7 +8,9 @@ const News = () => {
 
   const Getdata = async () => {
     try {
-      const news = await axios.get("https://newsapi.org/v2/everything?q=health&from=2024-10-25&sortBy=popularity&apiKey=ce145d000c3644819251eb53b10b5d0a");
+      const news = await axios.get("https://newsapi.org/v2/everything?q=diet&from=2024-11&sortBy=popularity&apiKey=ce145d000c3644819251eb53b10b5d0a");
+      const date=new Date().date;
+      console.log(date);
       console.log(news.status);
       if(news.status=="ok"||news.status==200)
       {
