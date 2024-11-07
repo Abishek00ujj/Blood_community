@@ -27,7 +27,7 @@ const AddDetails = () => {
   const DataAnupu = async (objData) => {
     setIsSubmitting(true);
     try {
-      const res = await axios.post("http://localhost:1998/api/v2/adddetails", objData);
+      const res = await axios.post("https://blood-community-tcn0.onrender.com/api/v2/adddetails", objData);
       if (res.status === 201) {
         alert("Data sent successfully");
         navigate("/development"); 

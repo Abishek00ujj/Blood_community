@@ -9,7 +9,7 @@ export const Home = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:1998/api/v2/getdetails");
+      const response = await axios.get("https://blood-community-tcn0.onrender.com/api/v2/getdetails");
       console.log(response.data);
       setData(response.data.data);
     } catch (error) {

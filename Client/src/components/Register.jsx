@@ -38,7 +38,7 @@ export const Register = () => {
   }
   const dataAnupu=async(objdata)=>{
     try{
-    await axios.post("http://localhost:1998/api/v1/register",objdata).then((response)=>{
+    await axios.post("https://blood-community-tcn0.onrender.com/api/v2/getdetails/api/v1/register",objdata).then((response)=>{
       const toastfy=(message)=>toast.success(message)
       setTimeout(()=>setRedirecttoLogin(true),2000);
         toastfy(response.data.message);
