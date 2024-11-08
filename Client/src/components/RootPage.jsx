@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import blood2 from '../assets/img/blood2.png';
+import Timeimg from '../assets/img/picimage.gif';
 import EmergencyCard from './EmergencyCard';
 import BloodCampcard from './BloodCampcard'
 import Footer from './Footer';
@@ -17,6 +18,9 @@ export const RootPage=()=>
              நேர்மறை ரத்த தான தாதைகளை ஒன்றுபடுத்தும் Blood Community என்பது எங்கள் கல்லூரியில் அவசர உதவிகளை எளிதாக்கும் ஒரு தளம் ஆகும். இந்த முயற்சி, தாதைகள் மற்றும் அவசர தேவையுள்ளவர்களை இணைத்து, தகவல்களை ஒருங்கிணைக்கச் செய்கிறது. பயனர் தங்களது ரத்த வகை மற்றும் இருப்பிடத்தை பதிவு செய்யும் வசதியுடன், அவசர காலத்தில் தேவையான தாதைகளைத் துல்லியமாகவும் நம்பகமாகவும் கண்டறிய உதவுகிறது. நேரடி தகவல் பகிர்வு மற்றும் தேடல் வசதிகளின் மூலம், மாணவர்களும் பணி நியமனர்களும் தேவையான ரத்த வகைகளை விரைவாகப் பெறலாம். இது கொயம்புத்தூரில் உள்ள ஸ்ரீ சக்தி இன்ஸ்டிடியூட் ஆஃப் எஞ்சினீயரிங் மற்றும் டெக்னாலஜியின் பி.டெக் தகவல் தொழில்நுட்ப மாணவர் அபிஷேக் உருவாக்கிய சிறப்பான முயற்சி ஆகும். ஒவ்வொரு கல்லூரியும் இத்தகைய தளங்களை பயன்படுத்தி அவசர நிலைகளில் விரைவாக உதவ உதவ வேண்டும் என்பதே குறிக்கோள். Blood Community தளம் எங்கள் வளாகத்தை பாதுகாப்பானதாகவும் உதவிகளுக்கு அடைவதற்கான மேம்பட்ட சூழலாகவும் மாற்றுகிறது. தொழில்நுட்பம் சமூகத்தின் நலனுக்காக ஒருங்கிணைந்த நடவடிக்கைகளை எளிதாக்க முடியும் என்பதை இந்த திட்டம் நிரூபிக்கிறது     Blood Community is a dedicated platform for active blood donors within our college, streamlining the blood donation process and ensuring quick access during emergencies. This initiative, designed to foster a community of support, allows users to register their blood type and location, making it easier for those in need to find suitable donors. The platform is user-friendly and collects essential information from each user to ensure accuracy and reliability. Through its live feed and search functionalities, students and staff can quickly access updates and search for specific blood types. Developed by Abishek, a BTech Information Technology student at Sri Shakthi Institute of Engineering and Technology in Coimbatore, this project showcases the power of technology in lifesaving applications. The hope is that every college adopts similar systems to enhance emergency preparedness. Blood Community bridges the gap between donors and those in need, making our campus a safer, more supportive environment. This tool stands as a testament to how technology can bring a community together for a greater cause.
              </p>
           </marquee>
+        </div>
+        <div className='w-screen flex justify-center bg-black'>
+        <img src={Timeimg} className='w-[40%]' alt="Blood Donation" />
         </div>
         <div className='w-screen h-screen flex flex-col justify-center items-center' id='mainPage'>
           <div className='text-center mb-8'>
