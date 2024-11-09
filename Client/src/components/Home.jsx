@@ -9,8 +9,7 @@ export const Home = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState(''); 
-  const [selectedBloodGroup, setSelectedBloodGroup] = useState(''); // New state for blood group
-
+  const [selectedBloodGroup, setSelectedBloodGroup] = useState('');
   const fetchData = async () => {
     try {
       setLoading(true);
@@ -28,7 +27,6 @@ export const Home = () => {
     fetchData();
   }, []);
 
-  // Filter data based on search query and selected blood group
   const filteredData = data.filter((item) =>
     (item.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
      item.city.toLowerCase().includes(searchQuery.toLowerCase())) &&
@@ -40,7 +38,7 @@ export const Home = () => {
       <Navbar name={"Home"} />
       {loading ? (
         <div className='w-screen h-screen flex justify-center items-center'>
-          <LoaderIcon className='animate-spin' />
+          <LoaderIcon className='animate-spin'  size={50}/>
         </div>
       ) : (
         <div className="flex flex-wrap justify-center">
