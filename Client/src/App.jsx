@@ -7,6 +7,7 @@ import About from './components/About';
 import News from './components/News';
 import Contact from './components/Contact';
 import AddDetails from './components/AddDetails';
+import Admin from './components/Admin';
 import Profile from './components/Profile';
 function App()
  {
@@ -22,6 +23,7 @@ function App()
         <Route path="/news" element={<News />} />
         <Route path="/development" element={<Profile/>}/>
         <Route path="/adddetails" element={<AddDetails />} />
+        <Route path='/admin' element={<Admin/>}/>
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </BrowserRouter>

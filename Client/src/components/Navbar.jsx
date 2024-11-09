@@ -36,6 +36,9 @@ export const Navbar = () => {
             <Link to="/register" onClick={handleSidebar}>
               <div className='w-full bg-slate-400 p-3'><p>Register</p></div>
             </Link>
+            <Link to="/admin" onClick={handleSidebar}>
+              <div className='w-full bg-slate-400 p-3'><p>Admin Login</p></div>
+            </Link>
           </div>
           <div className='absolute bottom-0 w-full text-center p-4'>
             <p className='text-white font-mono font-bold'>Powered by Abishek</p>
@@ -54,7 +57,7 @@ export const Navbar = () => {
           <Link to="/about" className="hover:underline"><p>About us</p></Link>
           <Link to="/login" className="hover:underline"><p>Register</p></Link>
           <Link to="/register" className="hover:underline"><p>Login</p></Link>
-          <User2 />
+          <Link to="/admin" ><User2 /></Link>
         </div>
       </div>
     </>
