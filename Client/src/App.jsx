@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Login } from './components/Login';
+import AddEpost from './components/AddEpost';
 import { Register } from './components/Register';
 import { Home } from './components/Home';
 import RootPage from './components/RootPage';
@@ -7,6 +8,7 @@ import About from './components/About';
 import News from './components/News';
 import Contact from './components/Contact';
 import AddDetails from './components/AddDetails';
+import AddCpost from './components/AddCpost';
 import Admin from './components/Admin';
 import Profile from './components/Profile';
 function App()
@@ -24,6 +26,8 @@ function App()
         <Route path="/development" element={<Profile/>}/>
         <Route path="/adddetails" element={<AddDetails />} />
         <Route path='/admin' element={<Admin/>}/>
+        <Route path='/addepost' element={<AddEpost/>}/>
+        <Route path='/addcamppost' element={<AddCpost/>}/>
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </BrowserRouter>
