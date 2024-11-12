@@ -17,6 +17,12 @@ const AddDetails = () => {
   const stateref = useRef(null);
 
   const convertToBase64 = (e) => {
+    const file = e.target.files[0];
+
+    if (file && file.size > 100 * 1024) {
+      alert("File size must be less than 100 KB.");
+      return; 
+    }
     const reader = new FileReader();
     reader.readAsDataURL(e.target.files[0]);
     reader.onload = () => {
