@@ -1,22 +1,14 @@
 import React from 'react';
-import defaultimg from '../assets/img/defaultprofile.webp';
-import { Phone } from 'lucide-react';
-
-const  BloodCampcard= () => {
+const BloodCampcard = ({ data }) => {
+  console.log(data+hello);
   return (
-    <div className='w-[220px] sm:w-[180px] md:w-[220px] border border-gray-300 p-4 rounded-xl shadow-lg bg-white'>
-      <div className='flex justify-center'>
-        <img src={defaultimg} alt="Patient" className='w-[200px] h-[200px] object-cover rounded-lg' />
-      </div>
+    <div className='w-[250px] sm:w-[200px] md:w-[220px] border border-gray-300 p-4 rounded-xl shadow-lg bg-white'>
       <div className='flex flex-col mt-3'>
-        <p className='font-bold'>Location: Coimbatore</p>
-        <p className='font-bold'>Address: PSG-HOSPITAL 📌</p>
-      </div>
-      <div className='w-full flex items-center mt-4'>
-        <p>Organizer contact: </p><Phone fill='green' color='green' size={30} className='cursor-pointer' />
+        <p className='font-bold truncate'>Camp: {data.address|| "N/A"}</p>
+        <p className='text-gray-600'>Location: {data.location || "N/A"}</p>
+        <p className='text-gray-600'>contact: { data.contact|| "N/A"}</p>
       </div>
     </div>
   );
 };
-
 export default BloodCampcard;
