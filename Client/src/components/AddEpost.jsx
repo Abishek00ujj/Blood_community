@@ -29,7 +29,7 @@ const AddEpost = () => {
   const toastfy=(message)=>toast.success(message)
   const sendData=async(obj)=>{
     try{
-        const res=await axios.post("http://localhost:1998/api/v3/addepost",obj);
+        const res=await axios.post("https://blood-community-tcn0.onrender.com/api/v3/addepost",obj);
         toastfy(res.data.message);
         if(res.status==201)
         {
