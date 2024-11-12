@@ -14,8 +14,8 @@ export const RootPage = () => {
 
   const getData = async () => {
     try {
-      const response1 = await axios.get("http://localhost:1998/api/v3/getepost");
-      const response2 = await axios.get("http://localhost:1998/api/v3/getcpost");
+      const response1 = await axios.get("https://blood-community-tcn0.onrender.com/api/v3/getepost");
+      const response2 = await axios.get("https://blood-community-tcn0.onrender.com/api/v3/getcpost");
       setEdata(response1.data.data);
       setCdata(response2.data.data);
     } catch (err) {
