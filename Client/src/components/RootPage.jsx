@@ -16,8 +16,8 @@ export const RootPage = () => {
     try {
       const response1 = await axios.get("http://localhost:1998/api/v3/getepost");
       const response2 = await axios.get("http://localhost:1998/api/v3/getcpost");
-      setEdata(response1.data);
-      setCdata(response2.data);
+      setEdata(response1.data.data);
+      setCdata(response2.data.data);
       console.log(response1.data);
       console.log(response2.data);
     } catch (err) {
@@ -68,35 +68,31 @@ export const RootPage = () => {
             </Link>
           </div>
           <div className='w-screen h-[5vh] mt-5'>
-            <p className='text-center font-bold text-2xl mt-1'>EMERGENCY</p>
-            <marquee behavior="" direction="">
-              <div className='flex space-x-7 mt-5'>
-                {Array.isArray(Edata) && Edata.length > 0 ? (
-                  Edata.map((item, index) => (
-                    <EmergencyCard data={item} key={index} />
-                  ))
-                ) : (
-                  <p>No emergency data available.</p>
-                )}
-              </div>
-            </marquee>
-          </div>
+  <p className='text-center font-bold text-2xl mt-1'>EMERGENCY</p>
+  <div className='flex space-x-7 mt-5 overflow-x-auto'>
+    {Array.isArray(Edata) && Edata.length > 0 ? (
+      Edata.map((item, index) => (
+        <EmergencyCard data={item} key={index} />
+      ))
+    ) : (
+      <p>No emergency data available.</p>
+    )}
+  </div>
+</div>
         </div>
       </div>
-      <div className='mt-[300px]'>
-        <p className='text-center font-bold text-2xl mt-1'>BLOOD-CAMP UPDATES</p>
-        <marquee behavior="" direction="">
-          <div className='flex space-x-7 mt-5'>
-            {Array.isArray(Cdata) && Cdata.length > 0 ? (
-              Cdata.map((camp, index) => (
-                <BloodCampCard key={index} data={camp} />
-              ))
-            ) : (
-              <p>No blood camp updates available.</p>
-            )}
-          </div>
-        </marquee>
-      </div>
+      <div className='mt-[400px]'>
+  <p className='text-center font-bold text-2xl'>BLOOD-CAMP UPDATES</p>
+  <div className='flex space-x-7 mt-5 overflow-x-auto'>
+    {Array.isArray(Cdata) && Cdata.length > 0 ? (
+      Cdata.map((camp, index) => (
+        <BloodCampCard key={index} data={camp} />
+      ))
+    ) : (
+      <p>No blood camp updates available.</p>
+    )}
+  </div>
+</div>
       <div className='w-screen flex justify-center mt-3'>
         <Link to="/news">
           <button className='bg-black text-white p-3 rounded-lg w-[40vw]'>
