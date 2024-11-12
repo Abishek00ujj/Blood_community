@@ -93,7 +93,7 @@ export const RootPage = () => {
 </div>
       <div className='w-screen flex justify-center mt-3'>
         <Link to="/news">
-          <button className='bg-black text-white p-3 rounded-lg w-[40vw]'>
+          <button className='bg-black text-white p-3 rounded-lg w-auto'>
             LIVE HEALTH NEWS📰
           </button>
         </Link>
@@ -105,7 +105,7 @@ export const RootPage = () => {
           </p>
           <div className='w-full flex justify-end'>
             <Link to="/contact">
-              <button className='bg-black text-white p-3 rounded-lg w-[100px] m-8'>
+              <button className='bg-black text-white p-3 rounded-lg w-auto m-8'>
                 Contact us
               </button>
             </Link>
