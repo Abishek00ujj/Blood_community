@@ -36,7 +36,7 @@ export const Navbar = () => {
             <Link to="/register" onClick={handleSidebar}>
               <div className='w-full bg-slate-400 p-3'><p>Register</p></div>
             </Link>
-            <Link to="/admin" onClick={handleSidebar}>
+            <Link to="/adminlogin" onClick={handleSidebar}>
               <div className='w-full bg-slate-400 p-3'><p>Admin Login</p></div>
             </Link>
           </div>
@@ -57,7 +57,7 @@ export const Navbar = () => {
           <Link to="/about" className="hover:underline"><p>About us</p></Link>
           <Link to="/login" className="hover:underline"><p>Register</p></Link>
           <Link to="/register" className="hover:underline"><p>Login</p></Link>
-          <Link to="/admin" ><User2 /></Link>
+          <Link to="/adminlogin" ><User2 /></Link>
         </div>
       </div>
     </>

@@ -18,8 +18,6 @@ export const RootPage = () => {
       const response2 = await axios.get("http://localhost:1998/api/v3/getcpost");
       setEdata(response1.data.data);
       setCdata(response2.data.data);
-      console.log(response1.data);
-      console.log(response2.data);
     } catch (err) {
       console.log(err);
     }
