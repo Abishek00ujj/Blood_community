@@ -4,7 +4,7 @@ const HomeComponent = (props) => {
   return (
     <>
     <div className='w-screen flex justify-center items-center'>
-    <div className='w-[30vh] border border-black rounded-lg backdrop-blur-lg m-5 p-5'>
+    <div className='w-[40vh] border border-black rounded-lg backdrop-blur-lg m-5 p-5'>
       <div><img src={props.img} alt="" className='rounded-full'/></div>
       <div className='flex w-full justify-between'><p className='font-bold text-slate-800'>{props.name}</p>
       <p className='text-3xl text-red-600 font-semibold'>{props.blood}</p></div>
