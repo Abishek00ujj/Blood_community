@@ -2,7 +2,7 @@ import React from 'react';
 
 const Newscomponent = ({ title, description, img, url }) => {
   return (
-    <div className="w-full h-auto flex max-xl:flex-col max-2xl:flex-col max-sm:flex-col max-md:flex-col max-lg:flex-col justify-center border border-black rounded-2xl m-4 p-4">
+    <div className="w-[500px] h-auto flex flex-col justify-center border border-black rounded-2xl m-4 p-4">
       <div className="w-[300px] h-[200px] overflow-hidden">
         <img src={img} alt={title} className="w-full h-full object-cover rounded-2xl" />
       </div>
