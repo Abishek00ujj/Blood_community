@@ -1,5 +1,7 @@
 import React from 'react'
 import abi from '../assets/img/abidp2.jpg'
+import akash from '../assets/img/akashk.jpg';
+import magibalan from '../assets/img/magibalan.png';
 import Navbar from './Navbar'
 export const About = () => {
   const teamMembers = [
@@ -13,14 +15,14 @@ export const About = () => {
       image: abi,
     },
     {
-      name: 'Magibalan S',
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae possimus hic fuga officiis, officia doloribus totam veritatis! Laboriosam amet, natus quisquam eveniet excepturi doloremque necessitatibus. Alias adipisci vel incidunt?",
-      image: 'https://via.placeholder.com/150', // Placeholder for Ponnarasu's photo
+      name: 'Akash K',
+      description: "I am Akash I  has learned MLOps and has a solid foundation in front-end development, is able to build and deploy machine learning models effectively while creating user-friendly interfaces for a seamless user experience.",
+      image: akash, // Placeholder for Vinoth's photo
     },
     {
-      name: 'Akash K',
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae possimus hic fuga officiis, officia doloribus totam veritatis! Laboriosam amet, natus quisquam eveniet excepturi doloremque necessitatibus. Alias adipisci vel incidunt?",
-      image: 'https://via.placeholder.com/150', // Placeholder for Vinoth's photo
+      name: 'Magibalan S',
+      description: "I am Magibalan I  has learned MLOps and has a solid foundation in front-end development, is able to build and deploy machine learning models effectively while creating user-friendly interfaces for a seamless user experience.",
+      image: magibalan, // Placeholder for Ponnarasu's photo
     },
   ];
 
@@ -62,7 +64,7 @@ export const About = () => {
       The development process involved collaborative teamwork where each member contributed their expertise—front-end development, back-end infrastructure, and full-stack integration. We used modern web development practices, focusing on responsiveness, performance, and scalability to ensure a high-quality user experience.
     </p>
     <p className="text-gray-700 text-lg mt-4">
-      We are proud to have built this platform, which not only enhances trip planning but also showcases the skills we have acquired through our education and this project.
+      We are proud to have built this platform, which not only enhances Blood Community but also showcases the skills we have acquired through our education and this project.
     </p>
   </div>
     </div>
