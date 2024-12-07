@@ -33,7 +33,7 @@ export const Login = () =>{
      await axios.post("https://blood-community-tcn0.onrender.com/api/v1/login",objdata).then((response)=>{
        const toastfy=(message)=>toast.success(message)
        console.log(response.data.user);
-       sessionStorage.setItem("id",response.data.user._id);
+       sessionStorage.setItem("id",response.data.user);
        console.log(sessionStorage.getItem("id"));
        toastfy(response.data.message);
        setTimeout(()=>setRedirecttohome(true),2000);

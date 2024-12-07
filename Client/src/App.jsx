@@ -12,6 +12,7 @@ import AddCpost from './components/AddCpost';
 import Admin from './components/Admin';
 import Profile from './components/Profile';
 import AdminLogin from './components/AdminLogin';
+import Reqblood from './components/Reqblood';
 function App()
  {
   return (
@@ -29,6 +30,7 @@ function App()
         <Route path='/admin' element={<Admin/>}/>
         <Route path='/addepost' element={<AddEpost/>}/>
         <Route path='/addcamppost' element={<AddCpost/>}/>
+        <Route path='/reqblood' element={<Reqblood/>}/>
         <Route path='/adminlogin' element={<AdminLogin/>}/>
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>

@@ -67,7 +67,7 @@ const Profile = () => {
                 <Link to="/news">
                   <button className='p-5 bg-green-500 text-white rounded-2xl m-5'>Health News🗞️</button>
                 </Link>
-                <Link to="/home">
+                <Link to="/reqblood">
                   <button className='p-5 bg-green-500 text-white rounded-2xl m-5'>Request an Emergency post📤</button>
                 </Link>
               </div>
