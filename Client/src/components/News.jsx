@@ -12,7 +12,7 @@ const News = () => {
   const Getdata = async () => {
     try {
       const news = await axios.get(
-        `https://newsapi.org/v2/everything?q=diet&from=2024-12-05&sortBy=popularity&apiKey=ce145d000c3644819251eb53b10b5d0a`
+        `https://newsapi.org/v2/everything?q=diet&from=2024-12-05&sortBy=popularity&apiKey=3440fa16b8254c3e96c6575ea694297a`
       );
 
       if (news.status === "ok" || news.status === 200) {
