@@ -32,7 +32,7 @@ const Reqblood = () => {
   const sendData=async(obj)=>{
     try{
         const res=await axios.post("https://blood-community-tcn0.onrender.com/api/v3/reqepost",obj);
-        toastfy(res.data.message);
+        toastfy("Requested blood post!");
         if(res.status==201)
         {
           bloodref.current.value="";
