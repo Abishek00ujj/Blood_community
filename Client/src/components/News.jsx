@@ -8,7 +8,6 @@ const News = () => {
   const [Datu, setDatu] = useState([]);
   const [visibleCount, setVisibleCount] = useState(10); 
   const [isLoadingMore, setIsLoadingMore] = useState(false);
-
   const Getdata = async () => {
     try {
       const news = await axios.get(
