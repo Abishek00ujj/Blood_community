@@ -30,7 +30,7 @@ router.post("/reqepost",async(req,res)=>{
         html: `
           <div style="font-family: Arial, sans-serif; line-height: 1.6; color: red; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
             <h2 style="text-align: center; color: #6c24a4;">Requesting a blood!🩸 Attention chief</h2>
-            <p>Hello, Admin ${name} is requesting a blood post request!</p>  <p>Blood Group: ${blood}</p>
+            <p>Hello, Admin , ${name} is requesting a blood post request!</p>  <p>Blood Group: ${blood}</p>
             <p>unit: ${unit}</p>
             <div style="text-align: center; margin: 20px 0; font-size: 24px; font-weight: bold; color: #4CAF50;"> <p style="font-size: 12px; color: #666;">Admin kindly call them and consider helping! : ${phone}</p></div>
             <hr style="border: 0; height: 1px; background: #ddd;">
